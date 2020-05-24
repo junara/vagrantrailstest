@@ -30,11 +30,19 @@ docker-compose exec web bin/setup
 
 ### 1. Install VirtualBox
 Accessed https://www.virtualbox.org/wiki/Downloads
+
 Download and install.
 
-### 2. Install Vagrant
+### 2. Install Vagrant and plugin
 Accessed https://www.vagrantup.com/downloads.html
+
 Download and install.
+
+Added plugin.
+
+```shell
+vagrant plugin install vagrant-disksize vagrant-hostsupdater vagrant-mutagen vagrant-docker-compose
+```
 
 ### 3. Create  `Vagrantfile` for vagrant
 Create following `Vagrantfile` .
@@ -95,6 +103,7 @@ end
 * `config.vm.hostname = 'my-app'`
 
 Set guest OS private IP address.
+
 Referenced by `mutagen.yml` using hostname 'my-app', 'my-app' is able to be changed. 
 
 
@@ -140,11 +149,13 @@ paths:
 ```
 
 Excluded in sync.
+
 Should exclude SQL database data directory.
 
 * `beta: "my-app:/home/vagrant/vagrantrailstest"`
 
 Matching with repository name is better.
+
 `my-app` should consist with `config.vm.hostname` in `Vagrantfile` .
 
 
