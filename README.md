@@ -28,6 +28,9 @@ docker-compose exec web bin/setup
 6. ssh to vagrant
 7. Common set up
 
+### How to movie
+[![](http://img.youtube.com/vi/1xBksIE2vAk/0.jpg)](http://www.youtube.com/watch?v=1xBksIE2vAk "")
+
 ### 1. Install VirtualBox
 Accessed https://www.virtualbox.org/wiki/Downloads
 
