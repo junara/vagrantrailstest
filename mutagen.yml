@@ -1,0 +1,12 @@
+sync:
+  defaults:
+    mode: "two-way-resolved"
+    ignore:
+      vcs: false
+      paths:
+        - "/node_modules"
+        - "/log"
+        - "/tmp"
+  app:
+    alpha: "./"
+    beta: "my-app:/home/vagrant/vagrantrailstest"

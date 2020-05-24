@@ -25,3 +25,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+.vagrant
+ubuntu-xenial-16.04-cloudimg-console.log
+mutagen.yml.lock
