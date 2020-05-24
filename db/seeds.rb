@@ -4,7 +4,7 @@ puts "\n== Delete User Table =="
 User.delete_all
 
 puts "\n== Create User Seed data =="
-num = 100_000
+num = 10000
 
 list = []
 num.times do |_i|
