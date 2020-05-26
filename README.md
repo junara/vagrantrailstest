@@ -21,7 +21,7 @@ docker-compose exec web bin/setup
 
 ## with Docker on vagrant
 1. Install VirtualBox
-2. Install Vagrant
+2. Install Vagrant, plugin and mutagen
 3. Create `Vagrantfile` for vagrant (vm).
 4. Create `mutagen.yml` for mutagen (file sync)
 5. Start vagrant
@@ -36,7 +36,7 @@ Accessed https://www.virtualbox.org/wiki/Downloads
 
 Download and install.
 
-### 2. Install Vagrant and plugin
+### 2. Install Vagrant, plugin and mutagen
 Accessed https://www.vagrantup.com/downloads.html
 
 Download and install.
@@ -45,6 +45,15 @@ Added plugin.
 
 ```shell
 vagrant plugin install vagrant-disksize vagrant-hostsupdater vagrant-mutagen vagrant-docker-compose
+```
+
+Install mutagen
+
+https://mutagen.io/documentation/introduction/installation
+
+```shell
+# Install the stable version of Mutagen.
+brew install mutagen-io/mutagen/mutagen
 ```
 
 ### 3. Create  `Vagrantfile` for vagrant
